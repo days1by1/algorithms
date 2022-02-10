@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="weekly-algorithm-problems" />
+        <module name="algorithms" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="weekly-algorithm-problems" target="8" />
+      <module name="algorithms" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
