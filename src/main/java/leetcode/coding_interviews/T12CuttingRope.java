@@ -15,6 +15,7 @@ public class T12CuttingRope {
     public void test() {
         System.out.println(cuttingRope(10));
         System.out.println(cuttingRope2(10));
+        System.out.println(cuttingRope3(10));
     }
 
     /**
@@ -46,5 +47,16 @@ public class T12CuttingRope {
             dp[i] = Math.max(Math.max(2 * (i - 2), 2 * dp[i - 2]), Math.max(3 * (i - 3), 3 * dp[i - 3]));
         }
         return dp[n];
+    }
+
+    /**
+     * 数学推导
+     */
+    public int cuttingRope3(int n) {
+        if (n <= 3) return n - 1;
+        int a = n / 3, b = n % 3;
+        if (b == 0) return (int) Math.pow(3, a);
+        if (b == 1) return (int) Math.pow(3, a - 1) * 4;
+        return (int) Math.pow(3, a) * 2;
     }
 }
