@@ -3,6 +3,7 @@ package leetcode.coding_interviews;
 import java.util.Stack;
 
 /**
+ * 简单
  * 剑指 Offer 24. 反转链表
  *
  * @author wangbo

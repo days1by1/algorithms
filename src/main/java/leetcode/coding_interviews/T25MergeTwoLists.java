@@ -1,6 +1,7 @@
 package leetcode.coding_interviews;
 
 /**
+ * 简单
  * 剑指 Offer 25. 合并两个排序的链表
  *
  * @author wangbo
