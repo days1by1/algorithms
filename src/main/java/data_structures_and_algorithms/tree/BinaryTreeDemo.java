@@ -15,11 +15,11 @@ public class BinaryTreeDemo {
     public void test(){
         int[] preorder = new int[]{3, 9, 20, 15, 7};
         int[] inorder = new int[]{9, 3, 15, 20, 7};
-        TreeNode root = TreeNode.buildTree(preorder, inorder);
+        BinaryTreeNode root = BinaryTreeNode.buildTree(preorder, inorder);
 
-        TreeNode.preorderPrintTree(root);
+        BinaryTreeNode.preorderPrintTree(root);
         System.out.println();
-        TreeNode.inorderPrintTree(root);
+        BinaryTreeNode.inorderPrintTree(root);
         System.out.println();
 
         // int[] preorder2 = new int[]{10, 9, 20, 15, 7};
@@ -31,14 +31,14 @@ public class BinaryTreeDemo {
         // TreeNode.inorderPrintTree(root2);
         // System.out.println();
 
-        System.out.println("递归前序遍历：" + TreeNode.preorder(root));
-        System.out.println("递归中序遍历：" + TreeNode.inorder(root));
-        System.out.println("递归后序遍历：" + TreeNode.postorder(root));
+        System.out.println("递归前序遍历：" + BinaryTreeNode.preorder(root));
+        System.out.println("递归中序遍历：" + BinaryTreeNode.inorder(root));
+        System.out.println("递归后序遍历：" + BinaryTreeNode.postorder(root));
 
         System.out.println("----------");
-        System.out.println("非递归前序遍历：" + TreeNode.preorder2(root));
-        System.out.println("非递归中序遍历：" + TreeNode.inorder2(root));
-        System.out.println("非递归后序遍历：" + TreeNode.postorder2(root));
+        System.out.println("非递归前序遍历：" + BinaryTreeNode.preorder2(root));
+        System.out.println("非递归中序遍历：" + BinaryTreeNode.inorder2(root));
+        System.out.println("非递归后序遍历：" + BinaryTreeNode.postorder2(root));
         // System.out.println("递归层序遍历：" + TreeNode.levelOrder(root));
         // System.out.println("递归层序遍历2：" + TreeNode.levelOrder2(root));
         // System.out.println("递归层序遍历3：" + TreeNode.levelOrder3(root));
