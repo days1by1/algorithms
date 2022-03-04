@@ -222,7 +222,7 @@ public class BinaryTreeNode {
     }
 
     /**
-     * 层序遍历
+     * 层序遍历：使用队列
      */
     public static List<List<Integer>> levelOrder(BinaryTreeNode root) {
         List<List<Integer>> resultList = new ArrayList<>();
