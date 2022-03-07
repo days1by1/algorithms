@@ -17,7 +17,7 @@ import java.util.Stack;
  * @author wangbo
  * @since 2022年03月06日 11:09
  */
-public class T33IIILevelOrder {
+public class T32IIILevelOrder {
 
     @Test
     public void test() {
