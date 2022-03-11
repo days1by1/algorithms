@@ -22,10 +22,33 @@ public class T36TreeToDoublyList {
             return null;
         }
         inorder(root);
-        for (int i = 0; i < list.size(); i++) {
-            list.get(i).right = list.get(i == list.size() - 1 ? 0 : i + 1);
-            list.get(i).left = list.get(i == 0 ? list.size() - 1 : i - 1);
+
+        // for (int i = 0; i < list.size(); i++) {
+        //     list.get(i).right = list.get(i == list.size() - 1 ? 0 : i + 1);
+        //     list.get(i).left = list.get(i == 0 ? list.size() - 1 : i - 1);
+        // }
+
+        // 减少判断次数
+        if (list.size() > 2) {
+            for (int i = 1; i < list.size() - 1; i++) {
+                list.get(i).right = list.get(i + 1);
+                list.get(i).left = list.get(i - 1);
+            }
+            list.get(0).right = list.get(1);
+            list.get(0).left = list.get(list.size() - 1);
+            list.get(list.size() - 1).right = list.get(0);
+            list.get(list.size() - 1).left = list.get(list.size() - 2);
+        } else if (list.size() == 2) {
+            list.get(0).right = list.get(1);
+            list.get(0).left = list.get(1);
+            list.get(1).right = list.get(0);
+            list.get(1).left = list.get(0);
+        } else if (list.size() == 1) {
+            list.get(0).right = list.get(0);
+            list.get(0).left = list.get(0);
         }
+
+
         return list.get(0);
     }
 
