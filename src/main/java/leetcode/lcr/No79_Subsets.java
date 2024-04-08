@@ -10,7 +10,7 @@ import java.util.List;
  * @author wangbo
  * @created 2024年04月04日 0:16
  */
-public class No079_Subsets {
+public class No79_Subsets {
 
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
