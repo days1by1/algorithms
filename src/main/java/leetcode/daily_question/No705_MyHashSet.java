@@ -16,6 +16,7 @@ public class No705_MyHashSet {
     private static final int BASE = 769;
     private LinkedList<Integer>[] data;
 
+    @SuppressWarnings("unchecked")
     public No705_MyHashSet() {
         data = new LinkedList[BASE];
         Arrays.setAll(data, s -> new LinkedList<>());
