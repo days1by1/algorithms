@@ -23,7 +23,10 @@ public class No4_FindMedianOfSortedArrays {
         return (getKthElement(nums1, nums2, len / 2) + getKthElement(nums1, nums2, len / 2 + 1)) / 2.0;
     }
 
-    // 参考官方解答，二分法，时间复杂度 O(log(m+n))
+    /*
+     * 参考官方解答，二分法，时间复杂度 O(log(m+n))
+     * 推而广之，若有 n 个正序数组要求中位数，则为 n 分，时间复杂度 O(log_n(len_1+len_2+...+len_n))
+     */
     public static int getKthElement(int[] nums1, int[] nums2, int k) {
         int len1 = nums1.length, len2 = nums2.length;
         int index1 = 0, index2 = 0;
